@@ -1,3 +1,5 @@
+[![MCPScore](https://timeahead.in/badge/timeahead-mcp.svg)](https://timeahead.in/mcp/timeahead-mcp)
+
 # timeahead-mcp
 
 MCP server for [timeahead.in](https://timeahead.in) — live, independent trust scores for MCP servers.
