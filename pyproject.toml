@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "timeahead-mcp"
+version = "0.1.0"
+description = "MCP server for timeahead.in — live trust scores for MCP servers"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["mcp", "ai", "security", "trust", "llm"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "mcp>=1.0",
+    "httpx>=0.25",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "respx>=0.21",
+]
+
+[project.scripts]
+timeahead-mcp = "timeahead_mcp.server:main"
+
+[project.urls]
+Homepage    = "https://timeahead.in"
+Repository  = "https://github.com/timeaheadin/timeahead-mcp"
+"Bug Tracker" = "https://github.com/timeaheadin/timeahead-mcp/issues"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
