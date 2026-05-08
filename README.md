@@ -1,4 +1,4 @@
-[![MCPScore](https://timeahead.in/badge/timeahead-mcp.svg)](https://timeahead.in/mcp/timeahead-mcp)
+[![MCPScore](https://timeahead.in/api/v1/mcp/badge/timeahead-mcp.svg)](https://timeahead.in/mcp/timeahead-mcp)
 
 # timeahead-mcp
 
